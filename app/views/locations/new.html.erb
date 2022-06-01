@@ -1,0 +1,23 @@
+<center> <h1 style="background-color:DodgerBlue;">New Place Details</h1> </center>
+
+<%= form_with model: @place, url: "/create_location" do |form| %>
+	<div>
+		<%= form.label :Shop_name %> <br>
+		<%= form.text_field :Shop_name %>
+	</div>
+
+	<div>
+		<%= form.label :Code %> <br>
+		<%= form.number_field :Code %>
+	</div>
+
+	<div>
+		<%= form.label :Description %> <br>
+		<%= form.text_area :Description %>
+	</div>
+
+	<div>
+		<%= form.submit "Save" %>
+	</div>
+
+	<% end %>

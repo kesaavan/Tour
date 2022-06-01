@@ -1,0 +1,21 @@
+<%= form_with model: @shops do |form| %>
+	<div>
+		<%= form.label :Shop_name %> <br>
+		<%= form.text_field :Shop_name %>
+	</div>
+
+	<div>
+		<%= form.label :Code %> <br>
+		<%= form.num_field :Code %>
+	</div>
+
+	<div>
+		<%= form.label :Description %> <br>
+		<%= form.text_area :Description %>
+	</div>
+
+	<div>
+		<%= form.submit "Save" %>
+	</div>
+
+	<% end %>

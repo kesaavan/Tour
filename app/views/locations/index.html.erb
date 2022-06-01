@@ -1,0 +1,18 @@
+<h1>List of Locations </h1>
+
+
+ <ul>
+	<% @places.each do |place| %>
+		<table width= "300">
+			<tr>
+				<td> <h2 style="color:orange;"> <%= place.Shop_name %> </h2></td>
+				<td> <p>  <a href="/locations/<%= place.id %>"> Show  </a> </p> </td>
+				<td> <p>  <a href="/locations/<%= place.id %>/edit_location"> Edit  </a> </p> </td>
+				<td> <p>  <a href="/delete_location/<%= place.id %> "> Delete  </a> </p> </td>
+			</tr>
+		</table>
+	<% end %>
+</ul>
+
+<h1> <a href="/locations/new"> New Locations of Shop </h1>
+
